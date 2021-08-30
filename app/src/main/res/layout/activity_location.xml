@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location">
+
+    <ImageView
+        android:id="@+id/imageView_Display"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textView_group2"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:paddingTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView_Display" />
+
+    <TextView
+        android:id="@+id/textView_shop_name"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView_group2"
+        android:text="Shop Name"
+        android:textColor="#009098"
+
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_shop_display"
+        style="@android:style/Widget.Holo.Light.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/textView_digt_rating"
+        android:layout_alignBottom="@+id/textView_group2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-4dp"
+      />
+
+    <TextView
+        android:id="@+id/textView_digt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignEnd="@+id/imageView_Location"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView_Location"
+        android:layout_marginTop="164dp"
+        android:text="4.5"
+        android:textColor="#f2830d"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_short_description"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_group2"
+        android:background="#FFE4E1"
+        android:text="Short Description"
+        android:paddingTop="10dp"
+        android:textColor="#2D5757"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton_directionsLocation"
+        android:layout_width="99dp"
+        android:layout_height="74dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_short_description"
+        android:onClick="browser1"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/direction"
+        tools:ignore="OnClick" />
+
+    <ImageButton
+        android:id="@+id/imageButton_website"
+        android:layout_width="99dp"
+        android:layout_height="74dp"
+        android:layout_above="@+id/textView_directions"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/website1" />
+
+
+    <TextView
+        android:id="@+id/textView_directions"
+        android:layout_width="98dp"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@+id/imageButton_directionsLocation"
+        android:layout_alignStart="@+id/imageButton_directionsLocation"
+        android:layout_below="@+id/imageButton_directionsLocation"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:text="DIRECTIONS"
+        android:textAlignment="textStart"
+        android:textColor="#1539f1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_Website"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageButton_directionsLocation"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginTop="0dp"
+        android:gravity="start"
+        android:text="WEBSITE"
+        android:textAlignment="textStart"
+        android:textColor="#1539f1"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView_Location"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_directions"
+        android:src="@drawable/location" />
+
+    <TextView
+        android:id="@+id/textView_locate"
+        android:layout_width="314dp"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_directions"
+        android:text="Address of the Shop Name"
+        android:textColor="#2D5757"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_area123"
+        android:layout_width="314dp"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_locate"
+        android:text="Area"
+        android:textColor="#2D5757"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

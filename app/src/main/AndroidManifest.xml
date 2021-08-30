@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidproject">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidProject">
+        <activity android:name=".Handicrafts"></activity>
+        <activity android:name=".ShoppingActivity" />
+        <activity android:name=".PlaceActivity" />
+        <activity android:name=".Place_list_Activity" />
+        <activity android:name=".ThingsToDoActivity" />
+        <activity android:name=".MainOptions2" />
+        <activity android:name=".MainOptions" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Plan_List_Activity" />
+        <activity android:name=".Specialities" />
+        <activity android:name=".Plan_a_DayActivity" />
+        <activity android:name=".Planned_Schedule_List_Activity" />
+        <activity android:name=".shoppingMall" />
+        <activity android:name=".StreetAreas" />
+        <activity android:name=".Location" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScheduleDayActivity" />
+    </application>
+
+</manifest>

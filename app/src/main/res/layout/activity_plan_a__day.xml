@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    tools:context=".Plan_a_DayActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="Plan Your Day"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Enter Starting Date"
+        android:textColorLink="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_start"
+        android:layout_alignTop="@+id/et_end"
+        android:text="Enter Ending Date"
+        android:textColorLink="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:text="Start Planning" />
+
+    <EditText
+        android:id="@+id/et_start"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="date"
+        android:textColorLink="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et_end"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="157dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textColorLink="@android:color/black"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Schedule Name..." />
+
+</RelativeLayout>
